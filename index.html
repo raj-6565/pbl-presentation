@@ -49,7 +49,7 @@
         
         <section class="text-center">
             <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">ID: [YOUR_REG_NO]</div>
-            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight"><span class="gradient-text uppercase">[Project Title Here]</span></h1>
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight"><span class="gradient-text uppercase">Multimodal Media Authenticity & Forensic Analysis System</span></h1>
             <p class="text-slate-400 max-w-2xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">
                 "Hypothesis/Project Statement: Define the core research question or the primary objective of your development project."
             </p>
@@ -58,12 +58,15 @@
         <section id="problem" class="grid md:grid-cols-2 gap-12 items-stretch">
             <div class="glass p-10 rounded-[2.5rem] flex flex-col justify-center border-l-4 border-blue-600">
                 <h2 class="text-3xl font-extrabold mb-6">Problem Statement</h2>
-                <p class="text-slate-400 leading-relaxed text-justify">Describe the specific challenge you are addressing. Why is this project necessary?</p>
+                <p class="text-slate-400 leading-relaxed text-justify">Deepfake videos and manipulated digital media are increasingly used for misinformation, fraud, and identity impersonation. Most existing forensic tools rely on heavy deep learning models requiring powerful GPUs, making them impractical for general use. There is a need for a lightweight, interpretable, and deployable multimodal forensic system capable of analyzing visual, audio, and metadata signals together and providing reliable authenticity decisions.</p>
             </div>
             <div class="space-y-6">
                 <div class="glass p-7 rounded-3xl border-r-4 border-blue-500/50">
                     <h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">Literature Review / Market Research</h3>
-                    <p class="text-sm text-slate-500 italic">Summary of existing solutions or research papers analyzed.</p>
+                    <p class="text-sm text-slate-500 italic">Existing systems such as FakeHunter, DeepWare Scanner, and Microsoft Video Authenticator use deep neural networks to detect manipulation. These systems provide good accuracy but require heavy computational resources and lack explainability.
+
+Research papers using CNN-based detection, spectrogram analysis, and metadata verification demonstrate that multimodal analysis improves reliability compared to single-modality approaches.
+</p>
                 </div>
                 <div class="glass p-7 rounded-3xl border-r-4 border-purple-500/50">
                     <h3 class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-2">Research Gap / Innovation</h3>
@@ -78,12 +81,46 @@
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-database text-blue-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Dataset / Input</h3>
-                    <p class="text-sm text-slate-500">[Source, size, and preprocessing details]</p>
+                    <p class="text-sm text-slate-500">Dataset Sources:
+
+• RealGuard Dataset (Kaggle) – real video samples  
+• Deepfake sample datasets – manipulated video samples  
+
+Dataset Size (current phase):  
+37+ labeled video samples (expandable)
+
+Preprocessing:
+
+• Frame extraction using OpenCV  
+• Audio extraction using FFmpeg  
+• Metadata extraction using video parsing tools  
+• Feature logging into structured CSV dataset</p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-microchip text-purple-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Model / Architecture</h3>
-                    <p class="text-sm text-slate-500">[Algorithms used or System Workflow]</p>
+                    <p class="text-sm text-slate-500">System Architecture:
+
+Visual Analysis Module:
+• Frame extraction
+• CNN-based anomaly detection
+• Statistical analysis (mean, variance, suspicious ratio)
+
+Audio Analysis Module:
+• Spectrogram generation
+• Frequency domain anomaly detection
+
+Metadata Analysis Module:
+• FPS consistency
+• Resolution analysis
+• Structural anomaly detection
+
+Fusion Model:
+• Random Forest classifier trained on extracted features
+• Produces final authenticity score and decision
+
+Frontend:
+• Streamlit-based interactive forensic dashboard</p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center border-2 border-green-500/20 bg-green-500/5">
                     <i class="fab fa-python text-green-500 text-3xl mb-4"></i>
@@ -112,12 +149,12 @@
             <div class="flex flex-wrap justify-center gap-10">
                 <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-blue-600">
                     <p class="text-[9px] font-bold text-blue-500 mb-2 uppercase tracking-widest">Project Guide</p>
-                    <p class="font-black text-xl text-slate-100">[Guide Name]</p>
+                    <p class="font-black text-xl text-slate-100">Dr. Arpita Baronia</p>
                 </div>
                 <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-slate-700">
                     <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase tracking-widest">Team Member 1</p>
-                    <p class="font-black text-xl text-slate-100">[Student Name]</p>
-                    <p class="text-[10px] text-slate-500 mt-1">[Reg No]</p>
+                    <p class="font-black text-xl text-slate-100">Raj Shukla</p>
+                    <p class="text-[10px] text-slate-500 mt-1">2427030683</p>
                 </div>
             </div>
         </section>
@@ -177,3 +214,4 @@
     </script>
 </body>
 </html>
+
