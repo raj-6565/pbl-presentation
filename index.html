@@ -48,10 +48,10 @@
     <main class="max-w-6xl mx-auto px-6 pt-48 pb-32 space-y-32">
         
         <section class="text-center">
-            <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">ID: [YOUR_REG_NO]</div>
+            <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">ID: 2427030683</div>
             <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight"><span class="gradient-text uppercase">Multimodal Media Authenticity & Forensic Analysis System</span></h1>
             <p class="text-slate-400 max-w-2xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">
-                "Hypothesis/Project Statement: Define the core research question or the primary objective of your development project."
+                "A lightweight multimodal forensic system that combines visual frame analysis, audio signal inspection, metadata verification, and machine learning fusion can reliably detect manipulated or deepfake media while remaining practical for deployment on standard computing systems."
             </p>
         </section>
 
@@ -64,13 +64,13 @@
                 <div class="glass p-7 rounded-3xl border-r-4 border-blue-500/50">
                     <h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">Literature Review / Market Research</h3>
                     <p class="text-sm text-slate-500 italic">Existing systems such as FakeHunter, DeepWare Scanner, and Microsoft Video Authenticator use deep neural networks to detect manipulation. These systems provide good accuracy but require heavy computational resources and lack explainability.
-
-Research papers using CNN-based detection, spectrogram analysis, and metadata verification demonstrate that multimodal analysis improves reliability compared to single-modality approaches.
+                        
+                        Research papers using CNN-based detection, spectrogram analysis, and metadata verification demonstrate that multimodal analysis improves reliability compared to single-modality approaches.
 </p>
                 </div>
                 <div class="glass p-7 rounded-3xl border-r-4 border-purple-500/50">
                     <h3 class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-2">Research Gap / Innovation</h3>
-                    <p class="text-sm text-slate-500 italic">What makes your approach different or better than the State-of-the-Art?</p>
+                    <p class="text-sm text-slate-500 italic">Most current solutions are resource-intensive, difficult to deploy locally, and operate as black-box models without interpretable forensic evidence. Our system addresses this by combining lightweight visual anomaly detection, audio spectral analysis, metadata inspection, and a machine learning fusion model to produce interpretable and deployable forensic decisions.</p>
                 </div>
             </div>
         </section>
@@ -82,45 +82,42 @@ Research papers using CNN-based detection, spectrogram analysis, and metadata ve
                     <i class="fas fa-database text-blue-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Dataset / Input</h3>
                     <p class="text-sm text-slate-500">Dataset Sources:
-
-• RealGuard Dataset (Kaggle) – real video samples  
-• Deepfake sample datasets – manipulated video samples  
-
-Dataset Size (current phase):  
-37+ labeled video samples (expandable)
-
-Preprocessing:
-
-• Frame extraction using OpenCV  
-• Audio extraction using FFmpeg  
-• Metadata extraction using video parsing tools  
-• Feature logging into structured CSV dataset</p>
+                        • RealGuard Dataset (Kaggle) – real video samples   
+                        • Deepfake sample datasets – manipulated video samples
+                        
+                        Dataset Size (current phase):
+                        37+ labeled video samples (expandable) 
+                        
+                        Preprocessing:
+                        • Frame extraction using OpenCV  
+                        • Audio extraction using FFmpeg  
+                        • Metadata extraction using video parsing tools  
+                        • Feature logging into structured CSV dataset</p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-microchip text-purple-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Model / Architecture</h3>
                     <p class="text-sm text-slate-500">System Architecture:
-
-Visual Analysis Module:
-• Frame extraction
-• CNN-based anomaly detection
-• Statistical analysis (mean, variance, suspicious ratio)
-
-Audio Analysis Module:
-• Spectrogram generation
-• Frequency domain anomaly detection
-
-Metadata Analysis Module:
-• FPS consistency
-• Resolution analysis
-• Structural anomaly detection
-
-Fusion Model:
-• Random Forest classifier trained on extracted features
-• Produces final authenticity score and decision
-
-Frontend:
-• Streamlit-based interactive forensic dashboard</p>
+                        Visual Analysis Module: 
+                        • Frame extraction 
+                        • CNN-based anomaly detection
+                        • Statistical analysis (mean, variance, suspicious ratio)
+                        
+                        Audio Analysis Module:
+                        • Spectrogram generation
+                        • Frequency domain anomaly detection
+                        
+                        Metadata Analysis Module:
+                        • FPS consistency 
+                        • Resolution analysis
+                        • Structural anomaly detection
+                        
+                        Fusion Model:
+                        • Random Forest classifier trained on extracted features
+                        • Produces final authenticity score and decision
+                        
+                        Frontend:
+                        • Streamlit-based interactive forensic dashboard</p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center border-2 border-green-500/20 bg-green-500/5">
                     <i class="fab fa-python text-green-500 text-3xl mb-4"></i>
@@ -137,7 +134,7 @@ Frontend:
                 <div class="space-y-6">
                     <div class="p-6 rounded-2xl bg-white/5 flex justify-between items-center border border-white/10 shadow-inner">
                         <span class="text-slate-400 font-bold uppercase text-xs tracking-widest">Accuracy / Performance</span>
-                        <span class="text-blue-400 font-mono font-black text-3xl">XX.X%</span>
+                        <span class="text-blue-400 font-mono font-black text-3xl">67.0%</span>
                     </div>
                     <p class="text-slate-500 text-sm italic text-justify leading-relaxed">Quantifiable outcomes and evaluation metrics compared to baselines.</p>
                 </div>
@@ -193,9 +190,9 @@ Frontend:
         new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Existing System', 'Our Solution'],
+                labels: ['Baseline Model', 'Our Fusion Model'],
                 datasets: [{
-                    data: [70, 92],
+                    data: [55, 67],
                     backgroundColor: ['#1e293b', '#3b82f6'],
                     borderRadius: 15,
                     barThickness: 50
@@ -214,4 +211,5 @@ Frontend:
     </script>
 </body>
 </html>
+
 
